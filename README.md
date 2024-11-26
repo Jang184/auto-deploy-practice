@@ -7,7 +7,7 @@
 	1.  EC2에 SSH 접속 (pem 키 권한 설정 필요: chmod 400)
 	2. nodejs, npm 설치
 	3. pm2 설치 (서버 실행용)
-	4. AWS CLI 설치
+	4. AWS CLI 설치 (SSM agent 상태 확인)
 3. 배포 스크립트 생성
 	1. 작성 후 s3에 업로드
-4. github actions workflow 설정
+4. github actions workflow 설정 (./github/workflow/deploy-using-s3.yaml)

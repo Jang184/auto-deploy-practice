@@ -30,7 +30,7 @@ jobs:
     - name: Upload deployment package and script
       run: |
         aws s3 cp deploy.zip s3://${{ secrets.S3_BUCKET }}/deploy.zip
-        aws s3 cp deploy.sh s3://${{ secrets.S3_BUCKET }}/deploy.sh
+        aws s3 cp deploy-using-s3.sh s3://${{ secrets.S3_BUCKET }}/deploy.sh
         
     - name: Execute deployment script
       run: |
