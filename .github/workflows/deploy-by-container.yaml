@@ -25,6 +25,7 @@ jobs:
     - name: Create .env file
       run: |
         echo "ECR_REGISTRY=${{ secrets.ECR_REGISTRY }}" > .env
+        echo "ECR_REPOSITORY=${{ secrets.ECR_REPOSITORY }}" >> .env
           
     - name: Upload .env to S3
       run: aws s3 cp .env s3://${{ secrets.S3_BUCKET }}/
